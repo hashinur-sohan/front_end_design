@@ -23,6 +23,11 @@ module.exports = {
         'nantes': ['Nantes', 'sans-serif'],
         'messina': ['Messina Sans', 'sans-serif'],
       },
+      lineHeight: {
+        'tight': '1.2',
+        'extra-tight': '1.1',
+        'super-tight': '1',
+      },
     },
   },
   plugins: [],
