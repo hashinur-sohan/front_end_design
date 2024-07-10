@@ -9,195 +9,221 @@ const Home = () => {
   return (
     <Layout>
       <section>
+        {/* Report Part */}
 
+        <div>
+          <div className="mb-[20px] ">
+            <h1 className="font-nantes w-[400px] text-[48px] leading-[67.63px]">
+              State of USA
+            </h1>
+            <button className="w-[200px] h-[58px] rounded-[124px] bg-[#2042B6] mt-[14px]  mb-[20px] flex items-center justify-center ">
+              <span className="text-[#FFFFFF]  text-[42px] font-nantes leading-[59.18px] ">2024</span>
+              <span><Image
+                src="/arrow_drop_down.png"
+                width={14}
+                height={7}
+                alt="about"
+                className=" w-[14px] h-[7px] ml-[46px]"
+              /></span>
+            </button>
+            <p className="font-messina w-[945px] text-[16px] leading-[25.6px] text-[#191618]">
+              Click through the slides or download the report to view natively
+              on your device.
+            </p>
+          </div>
+        </div>
 
         {/* stories and ideas section */}
+        <div>
+          <div className="mb-[20px] ">
+            <h1 className="font-nantes w-[400px] text-[48px] leading-[57.6px]">
+              Stories & Ideas
+            </h1>
+            <p className="font-messina w-[350px] text-[20px] leading-[24px]">
+              The latest news and updates
+            </p>
+          </div>
 
-        <div className="mb-[20px] ">
-          <h1 className="font-nantes w-[400px] text-[48px] leading-[57.6px]" >Stories & Ideas</h1>
-          <p className="font-messina w-[350px] text-[20px] leading-[24px]">The latest news and updates</p>
-        </div>
+          <div className="grid grid-cols-3 w-[1180px] gap-x-[20px] gap-y-[40px]">
+            {/* story 1 */}
+            <div className="flex ">
+              <div className="w-[380px] h-[268px]  ">
+                <Image
+                  src="/sagor-1.png"
+                  width={100}
+                  height={100}
+                  alt="sagor-1"
+                  className="w-[120px] h-[120px] absolute ml-[10px] "
+                />
 
-        <div className="grid grid-cols-3 w-[1180px] gap-x-[20px] gap-y-[40px]">
-          {/* story 1 */}
-          <div className="flex ">
-            <div className="w-[380px] h-[268px]  ">
-              <Image
-                src="/sagor-1.png"
-                width={100}
-                height={100}
-                alt="sagor-1"
-                className="w-[120px] h-[120px] absolute ml-[10px] "
-              />
-
-              <div className="w-[380px] h-[220px] bg-[#FFFFFF] rounded-[8px]  content-end mt-[50px]  ">
-                <div className="ml-[20px] ">
-                  <div className="w-[323px] h-[66px]  mt-[90px] ">
-                    <h2 className="w-[323px] h-[20px] font-sans text-[14px] font-[400] text-[#2042B6] leading-[19.6px] ">
-                      By: Sahabuddin Sagor
-                    </h2>
-                    <p className="font-nantes text-[16px] font-[400] text-[#191618] leading-[19.6px] ">
-                      Lorem ipsum dolor sit amet consectetur <br /> adipisicing
-                      elit. Maxime mollitia.
-                    </p>
+                <div className="w-[380px] h-[220px] bg-[#FFFFFF] rounded-[8px]  content-end mt-[50px]  ">
+                  <div className="ml-[20px] ">
+                    <div className="w-[323px] h-[66px]  mt-[90px] ">
+                      <h2 className="w-[323px] h-[20px] font-sans text-[14px] font-[400] text-[#2042B6] leading-[19.6px] ">
+                        By: Sahabuddin Sagor
+                      </h2>
+                      <p className="font-nantes text-[16px] font-[400] text-[#191618] leading-[19.6px] ">
+                        Lorem ipsum dolor sit amet consectetur <br />{" "}
+                        adipisicing elit. Maxime mollitia.
+                      </p>
+                    </div>
+                    <button className="w-[93px] h-[30px] rounded-[124px] bg-[#2042B6] mt-[14px]  mb-[20px]  ">
+                      <span className="text-[#FFFFFF]  ">Read More</span>
+                    </button>
                   </div>
-                  <button className="w-[93px] h-[30px] rounded-[124px] bg-[#2042B6] mt-[14px]  mb-[20px]  ">
-                    <span className="text-[#FFFFFF]  ">Read More</span>
-                  </button>
                 </div>
               </div>
             </div>
-          </div>
-          {/* story 2 */}
-          <div className="flex ">
-            <div className="w-[380px] h-[268px]  ">
-              <Image
-                src="/naiem-2.png"
-                width={100}
-                height={100}
-                alt="naiem-2"
-                className="w-[120px] h-[120px] absolute ml-[10px] "
-              />
+            {/* story 2 */}
+            <div className="flex ">
+              <div className="w-[380px] h-[268px]  ">
+                <Image
+                  src="/naiem-2.png"
+                  width={100}
+                  height={100}
+                  alt="naiem-2"
+                  className="w-[120px] h-[120px] absolute ml-[10px] "
+                />
 
-              <div className="w-[380px] h-[220px] bg-[#FFFFFF] rounded-[8px]  content-end mt-[50px]  ">
-                <div className="ml-[20px] ">
-                  <div className="w-[323px] h-[44px]  mt-[112px] ">
-                    <h2 className="w-[323px] h-[20px] font-sans text-[14px] font-[400] text-[#2042B6] leading-[19.6px] ">
-                      By: Nayem Khan
-                    </h2>
-                    <p className="font-nantes text-[16px] font-[400] text-[#191618] leading-[19.6px] ">
-                      Lorem ipsum dolor sit amet consectetur
-                    </p>
+                <div className="w-[380px] h-[220px] bg-[#FFFFFF] rounded-[8px]  content-end mt-[50px]  ">
+                  <div className="ml-[20px] ">
+                    <div className="w-[323px] h-[44px]  mt-[112px] ">
+                      <h2 className="w-[323px] h-[20px] font-sans text-[14px] font-[400] text-[#2042B6] leading-[19.6px] ">
+                        By: Nayem Khan
+                      </h2>
+                      <p className="font-nantes text-[16px] font-[400] text-[#191618] leading-[19.6px] ">
+                        Lorem ipsum dolor sit amet consectetur
+                      </p>
+                    </div>
+                    <button className="w-[93px] h-[30px] rounded-[124px] bg-[#2042B6] mt-[14px]  mb-[20px]  ">
+                      <span className="text-[#FFFFFF]  ">Read More</span>
+                    </button>
                   </div>
-                  <button className="w-[93px] h-[30px] rounded-[124px] bg-[#2042B6] mt-[14px]  mb-[20px]  ">
-                    <span className="text-[#FFFFFF]  ">Read More</span>
-                  </button>
                 </div>
               </div>
             </div>
-          </div>
             {/* story 3 */}
 
-          <div className="flex ">
-            <div className="w-[380px] h-[268px]  ">
-              <Image
-                src="/sagor-3.png"
-                width={100}
-                height={100}
-                alt="sagor-3"
-                className="w-[120px] h-[120px] absolute ml-[10px] "
-              />
+            <div className="flex ">
+              <div className="w-[380px] h-[268px]  ">
+                <Image
+                  src="/sagor-3.png"
+                  width={100}
+                  height={100}
+                  alt="sagor-3"
+                  className="w-[120px] h-[120px] absolute ml-[10px] "
+                />
 
-              <div className="w-[380px] h-[220px] bg-[#FFFFFF] rounded-[8px]  content-end mt-[50px]  ">
-                <div className="ml-[20px] ">
-                  <div className="w-[323px] h-[66px]  mt-[90px] ">
-                    <h2 className="w-[323px] h-[20px] font-sans text-[14px] font-[400] text-[#2042B6] leading-[19.6px] ">
-                      By: Sahabuddin Sagor
-                    </h2>
-                    <p className="font-nantes text-[16px] font-[400] text-[#191618] leading-[19.6px] ">
-                      Lorem ipsum dolor sit amet consectetur <br /> adipisicing
-                      elit. Maxime mollitia.
-                    </p>
+                <div className="w-[380px] h-[220px] bg-[#FFFFFF] rounded-[8px]  content-end mt-[50px]  ">
+                  <div className="ml-[20px] ">
+                    <div className="w-[323px] h-[66px]  mt-[90px] ">
+                      <h2 className="w-[323px] h-[20px] font-sans text-[14px] font-[400] text-[#2042B6] leading-[19.6px] ">
+                        By: Sahabuddin Sagor
+                      </h2>
+                      <p className="font-nantes text-[16px] font-[400] text-[#191618] leading-[19.6px] ">
+                        Lorem ipsum dolor sit amet consectetur <br />{" "}
+                        adipisicing elit. Maxime mollitia.
+                      </p>
+                    </div>
+                    <button className="w-[93px] h-[30px] rounded-[124px] bg-[#2042B6] mt-[14px]  mb-[20px]  ">
+                      <span className="text-[#FFFFFF]  ">Read More</span>
+                    </button>
                   </div>
-                  <button className="w-[93px] h-[30px] rounded-[124px] bg-[#2042B6] mt-[14px]  mb-[20px]  ">
-                    <span className="text-[#FFFFFF]  ">Read More</span>
-                  </button>
                 </div>
               </div>
             </div>
-          </div>
 
-          {/* story 4 */}
+            {/* story 4 */}
 
-          <div className="flex ">
-            <div className="w-[380px] h-[268px]  ">
-              <Image
-                src="/sagor-4.png"
-                width={100}
-                height={100}
-                alt="sagor-4"
-                className="w-[120px] h-[120px] absolute ml-[10px]"
-              />
+            <div className="flex ">
+              <div className="w-[380px] h-[268px]  ">
+                <Image
+                  src="/sagor-4.png"
+                  width={100}
+                  height={100}
+                  alt="sagor-4"
+                  className="w-[120px] h-[120px] absolute ml-[10px]"
+                />
 
-              <div className="w-[380px] h-[220px] bg-[#FFFFFF] rounded-[8px]  content-end mt-[50px]  ">
-                <div className="ml-[20px] ">
-                  <div className="w-[323px] h-[66px]  mt-[90px] ">
-                    <h2 className="w-[323px] h-[20px] font-sans text-[14px] font-[400] text-[#2042B6] leading-[19.6px] ">
-                      By: Sahabuddin Sagor
-                    </h2>
-                    <p className="font-nantes text-[16px] font-[400] text-[#191618] leading-[19.6px] ">
-                      Lorem ipsum dolor sit amet consectetur <br /> adipisicing
-                      elit. Maxime mollitia.
-                    </p>
+                <div className="w-[380px] h-[220px] bg-[#FFFFFF] rounded-[8px]  content-end mt-[50px]  ">
+                  <div className="ml-[20px] ">
+                    <div className="w-[323px] h-[66px]  mt-[90px] ">
+                      <h2 className="w-[323px] h-[20px] font-sans text-[14px] font-[400] text-[#2042B6] leading-[19.6px] ">
+                        By: Sahabuddin Sagor
+                      </h2>
+                      <p className="font-nantes text-[16px] font-[400] text-[#191618] leading-[19.6px] ">
+                        Lorem ipsum dolor sit amet consectetur <br />{" "}
+                        adipisicing elit. Maxime mollitia.
+                      </p>
+                    </div>
+                    <button className="w-[93px] h-[30px] rounded-[124px] bg-[#2042B6] mt-[14px]  mb-[20px]  ">
+                      <span className="text-[#FFFFFF]  ">Read More</span>
+                    </button>
                   </div>
-                  <button className="w-[93px] h-[30px] rounded-[124px] bg-[#2042B6] mt-[14px]  mb-[20px]  ">
-                    <span className="text-[#FFFFFF]  ">Read More</span>
-                  </button>
                 </div>
               </div>
             </div>
-          </div>
 
-          {/* story 5 */}
-          <div className="flex ">
-            <div className="w-[380px] h-[268px]  ">
-              <Image
-                src="/naiem-5.png"
-                width={100}
-                height={100}
-                alt="naiem-5"
-                className="w-[120px] h-[120px] absolute ml-[10px] "
-              />
+            {/* story 5 */}
+            <div className="flex ">
+              <div className="w-[380px] h-[268px]  ">
+                <Image
+                  src="/naiem-5.png"
+                  width={100}
+                  height={100}
+                  alt="naiem-5"
+                  className="w-[120px] h-[120px] absolute ml-[10px] "
+                />
 
-              <div className="w-[380px] h-[220px] bg-[#FFFFFF] rounded-[8px]  content-end mt-[50px]  ">
-                <div className="ml-[20px] ">
-                  <div className="w-[323px] h-[44px]  mt-[112px] ">
-                    <h2 className="w-[323px] h-[20px] font-sans text-[14px] font-[400] text-[#2042B6] leading-[19.6px] ">
-                    By: Nayem Khan
-                    </h2>
-                    <p className="font-nantes text-[16px] font-[400] text-[#191618] leading-[19.6px] ">
-                    Key Takeaways from Robotics Invest 2023
-                    </p>
+                <div className="w-[380px] h-[220px] bg-[#FFFFFF] rounded-[8px]  content-end mt-[50px]  ">
+                  <div className="ml-[20px] ">
+                    <div className="w-[323px] h-[44px]  mt-[112px] ">
+                      <h2 className="w-[323px] h-[20px] font-sans text-[14px] font-[400] text-[#2042B6] leading-[19.6px] ">
+                        By: Nayem Khan
+                      </h2>
+                      <p className="font-nantes text-[16px] font-[400] text-[#191618] leading-[19.6px] ">
+                        Key Takeaways from Robotics Invest 2023
+                      </p>
+                    </div>
+                    <button className="w-[93px] h-[30px] rounded-[124px] bg-[#2042B6] mt-[14px]  mb-[20px]  ">
+                      <span className="text-[#FFFFFF]  ">Read More</span>
+                    </button>
                   </div>
-                  <button className="w-[93px] h-[30px] rounded-[124px] bg-[#2042B6] mt-[14px]  mb-[20px]  ">
-                    <span className="text-[#FFFFFF]  ">Read More</span>
-                  </button>
                 </div>
               </div>
             </div>
-          </div>
 
-          {/* story 6 */}
-          <div className="flex ">
-            <div className="w-[380px] h-[268px]  ">
-              <Image
-                src="/sagor-6.png"
-                width={100}
-                height={100}
-                alt="sagor-6"
-                className="w-[120px] h-[120px] absolute ml-[10px] "
-              />
+            {/* story 6 */}
+            <div className="flex ">
+              <div className="w-[380px] h-[268px]  ">
+                <Image
+                  src="/sagor-6.png"
+                  width={100}
+                  height={100}
+                  alt="sagor-6"
+                  className="w-[120px] h-[120px] absolute ml-[10px] "
+                />
 
-              <div className="w-[380px] h-[220px] bg-[#FFFFFF] rounded-[8px]  content-end mt-[50px]  ">
-                <div className="ml-[20px] ">
-                  <div className="w-[323px] h-[66px]  mt-[90px] ">
-                    <h2 className="w-[323px] h-[20px] font-sans text-[14px] font-[400] text-[#2042B6] leading-[19.6px] ">
-                      By: Sahabuddin Sagor
-                    </h2>
-                    <p className="font-nantes text-[16px] font-[400] text-[#191618] leading-[19.6px] ">
-                      Lorem ipsum dolor sit amet consectetur <br /> adipisicing
-                      elit. Maxime mollitia.
-                    </p>
+                <div className="w-[380px] h-[220px] bg-[#FFFFFF] rounded-[8px]  content-end mt-[50px]  ">
+                  <div className="ml-[20px] ">
+                    <div className="w-[323px] h-[66px]  mt-[90px] ">
+                      <h2 className="w-[323px] h-[20px] font-sans text-[14px] font-[400] text-[#2042B6] leading-[19.6px] ">
+                        By: Sahabuddin Sagor
+                      </h2>
+                      <p className="font-nantes text-[16px] font-[400] text-[#191618] leading-[19.6px] ">
+                        Lorem ipsum dolor sit amet consectetur <br />{" "}
+                        adipisicing elit. Maxime mollitia.
+                      </p>
+                    </div>
+                    <button className="w-[93px] h-[30px] rounded-[124px] bg-[#2042B6] mt-[14px]  mb-[20px]  ">
+                      <span className="text-[#FFFFFF]  ">Read More</span>
+                    </button>
                   </div>
-                  <button className="w-[93px] h-[30px] rounded-[124px] bg-[#2042B6] mt-[14px]  mb-[20px]  ">
-                    <span className="text-[#FFFFFF]  ">Read More</span>
-                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
         {/* section divider */}
         <div className="mt-[100px] mb-[126px] ">
           <hr className="w-[1180px] h-[2px] bg-[#90B8F0] mb-[20px]" />
