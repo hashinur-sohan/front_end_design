@@ -13,20 +13,19 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        'dk-gray': '#9FA0A1',
-        'li-gray': '#E6E6E6',
-        'r-blue': '#2042B6',
-
+        "dk-gray": "#9FA0A1",
+        "li-gray": "#E6E6E6",
+        "r-blue": "#2042B6",
       },
 
       fontFamily: {
-        'nantes': ['Nantes', 'sans-serif'],
-        'messina': ['Messina Sans', 'sans-serif'],
+        nantes: ["Nantes", "sans-serif"],
+        messina: ["Messina Sans", "sans-serif"],
       },
       lineHeight: {
-        'tight': '1.2',
-        'extra-tight': '1.1',
-        'super-tight': '1',
+        tight: "1.2",
+        "extra-tight": "1.1",
+        "super-tight": "1",
       },
     },
   },

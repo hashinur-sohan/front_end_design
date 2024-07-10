@@ -11,25 +11,106 @@ const Home = () => {
       <section>
         {/* Report Part */}
 
-        <div>
+        <div className="">
           <div className="mb-[20px] ">
             <h1 className="font-nantes w-[400px] text-[48px] leading-[67.63px]">
               State of USA
             </h1>
             <button className="w-[200px] h-[58px] rounded-[124px] bg-[#2042B6] mt-[14px]  mb-[20px] flex items-center justify-center ">
-              <span className="text-[#FFFFFF]  text-[42px] font-nantes leading-[59.18px] ">2024</span>
-              <span><Image
-                src="/arrow_drop_down.png"
-                width={14}
-                height={7}
-                alt="about"
-                className=" w-[14px] h-[7px] ml-[46px]"
-              /></span>
+              <span className="text-[#FFFFFF]  text-[42px] font-nantes leading-[59.18px] ">
+                2024
+              </span>
+              <span>
+                <Image
+                  src="/arrow_drop_down.png"
+                  width={14}
+                  height={7}
+                  alt="about"
+                  className=" w-[14px] h-[7px] ml-[46px]"
+                />
+              </span>
             </button>
             <p className="font-messina w-[945px] text-[16px] leading-[25.6px] text-[#191618]">
               Click through the slides or download the report to view natively
               on your device.
             </p>
+          </div>
+
+          <div className="flex flex-row  ">
+            <div className=" w-[580px]  h-[326px] ">
+              <Image
+                src="/report-1.png"
+                width={580}
+                height={326}
+                alt="report-1"
+                className=" w-[580px] h-[326px] "
+              />
+            </div>
+            <div className="bg-[url('/report-bg-image.png')] bg-cover bg-center ">
+              <Image
+                src="/report-2.png"
+                width={580}
+                height={326}
+                alt="report-2"
+                className="w-[580px] h-[326px] "
+              />
+            </div>
+            <div className="w-[580px] h-[326px] px-[20px] pb-[50px]  ">
+              <Image
+                src="/report-3.png"
+                width={580}
+                height={326}
+                alt="report-3"
+                className=" w-[580px] h-[326px]  rounded-[5px ] pb-[60px]"
+              />
+            </div>
+          </div>
+          <div className="flex flex-row items-center  ">
+            {/* arrow_downward_left */}
+            <button className="w-[56px] h-[56px] rounded-[124px] bg-[#ffffff] mt-[14px]  mb-[20px] flex mr-[20px]  items-center justify-center ">
+              <Image
+                src="/arrow_downward_left.png"
+                width={14.15}
+                height={15.74}
+                alt="about"
+                className=" w-[14.15px] h-[15.74px] "
+              />
+            </button>
+
+            {/* arrow_downward_right */}
+            <button className="w-[56px] h-[56px] rounded-[124px] bg-[#ffffff] mt-[14px]  mb-[20px] flex items-center justify-center mr-[30px] ">
+              <Image
+                src="/arrow_downward_right.png"
+                width={14.15}
+                height={15.74}
+                alt="about"
+                className=" w-[14.15px] h-[15.74px] "
+              />
+            </button>
+
+            <p className="text-[#191618]  text-[16px] font-messina font-[400] leading-[19.2px] mr-[9px] ">
+              Pages
+            </p>
+            <button className="w-[200px] h-[58px] rounded-[124px] bg-[#ffffff] mt-[14px]  mb-[20px] flex items-center justify-center mr-[10px] ">
+              <span className="text-[#191618]  text-[16px] font-messina leading-[19.2px] ">
+                1 and 2
+              </span>
+              <span>
+                <Image
+                  src="/arrow_drop_down-2.png"
+                  width={14}
+                  height={7}
+                  alt="about"
+                  className=" w-[14px] h-[7px] ml-[46px]"
+                />
+              </span>
+            </button>
+            <p className="text-[#191618]  text-[16px] font-messina font-[400] leading-[19.2px] mr-[470px] ">
+              of 37
+            </p>
+            <button className="w-[240px] h-[56px] rounded-[124px] bg-[#2042B6]  ">
+              <span className="text-[#FFFFFF]  "> Download the 2023 Report</span>
+            </button>
           </div>
         </div>
 
