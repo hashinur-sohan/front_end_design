@@ -9,6 +9,114 @@ const Home = () => {
   return (
     <Layout>
       <section>
+        {/* Potential Future Listings */}
+
+        <div className="mb-[155px] ">
+          <div>
+            <h1 className="font-nantes  h-[34px] text-[48px] leading-[57.6px] ">
+              Potential Future Listings
+            </h1>
+            <p className="w-[880px] h-[52px] font-messina text-[16px] leading-[15.6px] font-[400] text-[#191618] mt-[20px] ">
+              Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              vulputate libero et velit interdum, ac aliquet odio mattis. Class
+              aptent taciti sociosqu ad litora torquent per conubia nostra, per
+              inceptos himenaeos.
+            </p>
+          </div>
+          <div className="grid grid-cols-5 gap-[20px] mt-[26px]">
+            <div className="w-[220px] h-[120px] rounded bg-white flex items-center justify-center" >
+              <Image
+                src="/stripe.png"
+                width={133}
+                height={55.34}
+                alt="stripe"
+                className="  "
+              />
+            </div>
+            <div className="w-[220px] h-[120px] rounded bg-white flex items-center justify-center" >
+              <Image
+                src="/klarna.png"
+                width={140}
+                height={52.42}
+                alt="klarna"
+                className="  "
+              />
+            </div>
+            <div className="w-[220px] h-[120px] rounded bg-white flex items-center justify-center" >
+              <Image
+                src="/plaid.png"
+                width={133}
+                height={55.34}
+                alt="plaid"
+                className=" w-133px] h-[55.34px] "
+              />
+            </div>
+            <div className="w-[220px] h-[120px] rounded bg-white flex items-center justify-center" >
+              <Image
+                src="/checkout.png"
+                width={183.96}
+                height={24}
+                alt="checkout"
+                className="  "
+              />
+            </div>
+            <div className="w-[220px] h-[120px] rounded bg-white flex items-center justify-center" >
+              <Image
+                src="/revilut.png"
+                width={143.12}
+                height={32.2}
+                alt="revilut"
+                className="  "
+              />
+            </div>
+            <div className="w-[220px] h-[120px] rounded bg-white flex items-center justify-center" >
+              <Image
+                src="/chim.png"
+                width={154.13}
+                height={44.32}
+                alt="chim"
+                className="  "
+              />
+            </div>
+            <div className="w-[220px] h-[120px] rounded bg-white flex items-center justify-center" >
+              <Image
+                src="/n26.png"
+                width={94}
+                height={64.3}
+                alt="n26"
+                className="  "
+              />
+            </div>
+            <div className="w-[220px] h-[120px] rounded bg-white flex items-center justify-center" >
+              <Image
+                src="/brex.png"
+                width={144.76}
+                height={38}
+                alt="brex"
+                className=" "
+              />
+            </div>
+            <div className="w-[220px] h-[120px] rounded bg-white flex items-center justify-center" >
+              <Image
+                src="/deel.png"
+                width={124.93}
+                height={43.91}
+                alt="deel"
+                className=" "
+              />
+            </div>
+            <div className="w-[220px] h-[120px] rounded bg-white flex items-center justify-center" >
+              <Image
+                src="/gusto.png"
+                width={131.4}
+                height={50}
+                alt="gusto"
+                className=" "
+              />
+            </div>
+          </div>
+        </div>
+
         {/* Report Part */}
 
         <div className="">
@@ -25,7 +133,7 @@ const Home = () => {
                   src="/arrow_drop_down.png"
                   width={14}
                   height={7}
-                  alt="about"
+                  alt="arrow_drop_down"
                   className=" w-[14px] h-[7px] ml-[46px]"
                 />
               </span>
@@ -109,7 +217,10 @@ const Home = () => {
               of 37
             </p>
             <button className="w-[240px] h-[56px] rounded-[124px] bg-[#2042B6]  ">
-              <span className="text-[#FFFFFF]  "> Download the 2023 Report</span>
+              <span className="text-[#FFFFFF]  ">
+                {" "}
+                Download the 2023 Report
+              </span>
             </button>
           </div>
         </div>
