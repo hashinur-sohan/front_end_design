@@ -2,6 +2,7 @@
 import Layout from "@/components/Layout";
 import Footer from "@/components/Footer";
 import Image from "next/image";
+import CompanyTable from "@/components/CompanyTable";
 
 // import React from 'react';
 
@@ -9,14 +10,43 @@ const Home = () => {
   return (
     <Layout>
       <section>
+        {/* all companies */}
 
-        <div >
-          <div className="w-[1316px] h-[600px] bg-[#ffffff] ">
+        <div>
+          <div className="w-[1316px]  bg-[#ffffff] rounded-[20px]">
+            <div className="flex  ">
+              <h1 className="font-nantes  h-[34px] text-[48px] font-[400] leading-[57.6px] mt-[53px] ml-[45px] ">
+                All Companies
+              </h1>
+              <div className="w-[588px] h-[58px] rounded-[8px] border-[1px] border-[#DADADA] bg-[#F3F3F3] flex flex-row mt-[53px] ml-[326px]">
+                <Image
+                  src="/search.png"
+                  width={17.58}
+                  height={17.58}
+                  alt="search"
+                  className="w-[24px] h-[24px]  ml-[19px] my-[17px] "
+                />
+                <p className="font-nantes  h-[34px] text-[24px] font-[400] leading-[28.8px] ml-[9px] mt-[15px]  ">
+                  Search Companies
+                </p>
+              </div>
+            </div>
+            <div className="w-[1230px]  ml-[30px] mt-[52px]  ">
+              <CompanyTable />
+            </div>
+          </div>
+          <div className="mt-[40px] ml-[442px] mb-[151px]">
+            <button className="w-[269px] h-[47px]  rounded-[124px] bg-[#2042B6] mr-[12px] ">
+              <span className="text-[#FFFFFF]  ">
+                Download ‘All Companies’ Data
+              </span>
+            </button>
 
+            <button className="w-[210px] h-[47px] rounded-[124px] bg-[#2042B6]  ">
+              <span className="text-[#FFFFFF]  ">View Methodology</span>
+            </button>
           </div>
         </div>
-
-
 
         {/* Potential Future Listings */}
 
@@ -33,7 +63,7 @@ const Home = () => {
             </p>
           </div>
           <div className="grid grid-cols-5 gap-[20px] mt-[26px]">
-            <div className="w-[220px] h-[120px] rounded bg-white flex items-center justify-center" >
+            <div className="w-[220px] h-[120px] rounded bg-white flex items-center justify-center">
               <Image
                 src="/stripe.png"
                 width={133}
@@ -42,7 +72,7 @@ const Home = () => {
                 className="  "
               />
             </div>
-            <div className="w-[220px] h-[120px] rounded bg-white flex items-center justify-center" >
+            <div className="w-[220px] h-[120px] rounded bg-white flex items-center justify-center">
               <Image
                 src="/klarna.png"
                 width={140}
@@ -51,7 +81,7 @@ const Home = () => {
                 className="  "
               />
             </div>
-            <div className="w-[220px] h-[120px] rounded bg-white flex items-center justify-center" >
+            <div className="w-[220px] h-[120px] rounded bg-white flex items-center justify-center">
               <Image
                 src="/plaid.png"
                 width={133}
@@ -60,7 +90,7 @@ const Home = () => {
                 className=" w-133px] h-[55.34px] "
               />
             </div>
-            <div className="w-[220px] h-[120px] rounded bg-white flex items-center justify-center" >
+            <div className="w-[220px] h-[120px] rounded bg-white flex items-center justify-center">
               <Image
                 src="/checkout.png"
                 width={183.96}
@@ -69,7 +99,7 @@ const Home = () => {
                 className="  "
               />
             </div>
-            <div className="w-[220px] h-[120px] rounded bg-white flex items-center justify-center" >
+            <div className="w-[220px] h-[120px] rounded bg-white flex items-center justify-center">
               <Image
                 src="/revilut.png"
                 width={143.12}
@@ -78,7 +108,7 @@ const Home = () => {
                 className="  "
               />
             </div>
-            <div className="w-[220px] h-[120px] rounded bg-white flex items-center justify-center" >
+            <div className="w-[220px] h-[120px] rounded bg-white flex items-center justify-center">
               <Image
                 src="/chim.png"
                 width={154.13}
@@ -87,7 +117,7 @@ const Home = () => {
                 className="  "
               />
             </div>
-            <div className="w-[220px] h-[120px] rounded bg-white flex items-center justify-center" >
+            <div className="w-[220px] h-[120px] rounded bg-white flex items-center justify-center">
               <Image
                 src="/n26.png"
                 width={94}
@@ -96,7 +126,7 @@ const Home = () => {
                 className="  "
               />
             </div>
-            <div className="w-[220px] h-[120px] rounded bg-white flex items-center justify-center" >
+            <div className="w-[220px] h-[120px] rounded bg-white flex items-center justify-center">
               <Image
                 src="/brex.png"
                 width={144.76}
@@ -105,7 +135,7 @@ const Home = () => {
                 className=" "
               />
             </div>
-            <div className="w-[220px] h-[120px] rounded bg-white flex items-center justify-center" >
+            <div className="w-[220px] h-[120px] rounded bg-white flex items-center justify-center">
               <Image
                 src="/deel.png"
                 width={124.93}
@@ -114,7 +144,7 @@ const Home = () => {
                 className=" "
               />
             </div>
-            <div className="w-[220px] h-[120px] rounded bg-white flex items-center justify-center" >
+            <div className="w-[220px] h-[120px] rounded bg-white flex items-center justify-center">
               <Image
                 src="/gusto.png"
                 width={131.4}
