@@ -9,6 +9,15 @@ const Home = () => {
   return (
     <Layout>
       <section>
+
+        <div >
+          <div className="w-[1316px] h-[600px] bg-[#ffffff] ">
+
+          </div>
+        </div>
+
+
+
         {/* Potential Future Listings */}
 
         <div className="mb-[155px] ">
