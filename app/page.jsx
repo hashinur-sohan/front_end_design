@@ -3,17 +3,185 @@ import Layout from "@/components/Layout";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import CompanyTable from "@/components/CompanyTable";
-
+import LineChart from "@/components/LineChart";
+import Navbar from "@/components/Navbar";
+import Head from "next/head";
+import NavBar from "@/components/Navbar";
+import { useState } from "react";
 // import React from 'react';
+
+const img = {
+  img: [],
+};
 
 const Home = () => {
   return (
     <Layout>
       <section>
+        <div
+          className="mt-[80px] h-[718px] bg-[#2042B6] rounded-[5px] flex bg-center bg-no-repeat"
+          style={{
+            backgroundImage: "url('/top.svg')",
+            backgroundBlendMode: "multiply",
+          }}
+        >
+          <div className="flex items-end">
+            <Image
+              src="/top-dt.png"
+              width={319}
+              height={418}
+              alt="top-dt"
+              className="ml-[44px] mb-[40px] w-[319px] h-[418px]  "
+            />
+          </div>
+
+          <div className="relative flex items-center justify-center">
+            <Image
+              src="/Rectangle 1.png"
+              width={491}
+              height={427}
+              alt="top-dt"
+              className="w-[491px] h-[427px] "
+            />
+            <div className="absolute items-center text-white text-center">
+              <h1 className="  text-[60px] font-[400]">The WPPOOL Index</h1>
+              <p className="w-[1145px] ">
+                Monitor the performance of emerging, publicly traded, financial
+                technology companies
+              </p>
+            </div>
+          </div>
+          <div className="flex items-end ml-[250px] mb-[40px]">
+            <div className="bg-white rounded-[125px] w-[64px] h-[64px] flex items-center justify-center">
+              <Image
+                src="/arrow_downward_alt.png"
+                width={32}
+                height={32}
+                alt="top-dt"
+                className="w-[32px] h-[32px] "
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* graph */}
+
+        <div className="min-h-screen bg-[#ffffff] mt-[60px] ">
+          <div className="container mx-auto py-8">
+            <div className="flex items-center justify-between">
+              {/* <button className="bg-blue-500 text-white px-4 py-2 rounded">
+                Download the 2023 Report
+              </button> */}
+            </div>
+
+            <div className="mt-8 grid grid-cols-5 gap-4">
+              <div className="col-span-1 w-[180px]">
+                <ul>
+                  <li className="p-2 bg-[#2042B6] rounded mb-2 text-[#ffffff] ">
+                    The Index
+                  </li>
+                  <li className="p-2 bg-white rounded mb-2">
+                    The Index Tab Two
+                  </li>
+                  <li className="p-2 bg-white rounded mb-2">
+                    The Index Tab Three
+                  </li>
+                  <li className="p-2 bg-white rounded mb-2">
+                    The Index Tab Four
+                  </li>
+                  <li className="p-2 bg-white rounded mb-2">
+                    The Index Tab Five
+                  </li>
+                </ul>
+              </div>
+
+              <div className="col-span-4 bg-white p-6 rounded-lg shadow">
+              <div className="flex flex-row">
+              <Image
+                  src="/Union.png"
+                  width={46}
+                  height={41}
+                  alt="search"
+                  className="w-[46px] h-[41px]  "
+                />   
+
+
+              
+                <h1 className="font-nantes font-[400] text-[36px] leading-[50.72px] ">
+                  The WPPOOL Index
+                </h1>
+              </div>
+                <div className="flex justify-between items-center mb-4">
+                  <div className="text-xl flex flex-row">
+                    <div className="flex w-[230px] h-[50px] bg-[#F3F3F3] ml-[10px] items-center justify-between">
+                      <p className="text-[#FC714D] text-[30px] ">+66.2%</p>{" "}
+                      <p className="text-[12px]">
+                        {" "}
+                        WPPOOL <br /> Index
+                      </p>
+                    </div>
+                    <div className="flex w-[230px] h-[50px] bg-[#F3F3F3] ml-[10px] items-center justify-between">
+                      <p className="ml-4 text-[#615DE3] text-[30px]">+26.6%</p>
+                      <p className="text-[12px]">
+                        {" "}
+                        Google <br /> Index
+                      </p>
+                    </div>
+                    <div className="flex w-[230px] h-[50px] bg-[#F3F3F3] ml-[10px] items-center justify-between">
+                      {" "}
+                      <p className="ml-4 text-[#7CA63A] text-[30px]">+34.1%</p>
+                      <p className="text-[12px]"> Microsoft</p>
+                    </div>
+                    <div className="flex w-[230px] h-[50px] bg-[#F3F3F3] ml-[10px] items-center justify-between">
+                      <p className="ml-4 text-[#6F34A1] text-[30px]">+17%</p>{" "}
+                      <p className="text-[12px]">
+                        Twitter <br /> Index{" "}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex justify-between ">
+                  <div className="flex  ">
+                    <button className="w-[178px]  bg-[#2042B6] text-[#ffffff] px-4   ml-2  flex justify-start items-center rounded-[124px]">
+                      Sectors
+                    </button>
+                    <button className="w-[178px]  bg-[#2042B6] text-[#ffffff] px-4   ml-2  flex justify-start items-center rounded-[124px]">
+                      Types of IPO
+                    </button>
+                  </div>
+                  <div className="flex justify-end items-center w-[300px] h-[30px] bg-[#EFF3F6] rounded-[124px]  ">
+                   
+                      <button className=" text-[#748DA1]  mr-2">
+                        1Y
+                      </button>
+                      <button className=" text-[#748DA1] px-4 ">
+                       YTD
+                      </button>
+                      <button className="w-[45px]  bg-[#2042B6] text-[#748DA1] px-4   ml-2  flex justify-center rounded-[124px]" >
+                      6M
+                      </button>
+                      <button className=" text-[#748DA1] px-4   ml-2">
+                        1W
+                      </button>
+                      <button className=" text-[#748DA1] px-4   ml-2">
+                        1W
+                      </button>
+                    
+                  </div>
+                </div>
+
+                <div className="relative">
+                  <LineChart />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* all companies */}
 
         <div>
-          <div className="w-[1316px]  bg-[#ffffff] rounded-[20px]">
+          <div className=" bg-[#ffffff] rounded-[20px] mt-[60px] ">
             <div className="flex  ">
               <h1 className="font-nantes  h-[34px] text-[48px] font-[400] leading-[57.6px] mt-[53px] ml-[45px] ">
                 All Companies
@@ -31,7 +199,7 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <div className="w-[1230px]  ml-[30px] mt-[52px]  ">
+            <div className="  ml-[30px] mt-[52px]  ">
               <CompanyTable />
             </div>
           </div>

@@ -1,8 +1,5 @@
 "use client"
 
-
-
-
 const data = [
     { company: 'Adyen', ticker: 'AFRM', vertical: 'Payments', price: 17.15, marketCap: 50.5, revenueGrowth: '49.0%', grossMargin: '15.8%', evRevenue: 6.3, ytdPerformance: '24.3%' },
     { company: 'Affirm', ticker: 'AFRM', vertical: 'Lending', price: 16.12, marketCap: 4.7, revenueGrowth: '32.0%', grossMargin: '48.7%', evRevenue: 4.9, ytdPerformance: '77.1%' },
@@ -35,7 +32,7 @@ const CompanyTable = () => {
         </thead>
         <tbody>
           {data.map((item, index) => (
-            <tr key={index} className={`text-center ${[0, 2, 4, 6, 8,].includes(index) ?'bg-[#F3F3F3]' : ''} rounded-lg `}>
+            <tr key={index} className={`text-center ${[0, 2, 4, 6, 8,].includes(index) ?'bg-[#F3F3F3]' : ''} `}>
               <td className="py-2 px-4 border-b text-left">{item.company}</td>
               <td className="py-2 px-4 border-b ">{item.ticker}</td>
               <td className="py-2 px-4 border-b">{item.vertical}</td>

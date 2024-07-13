@@ -1,15 +1,13 @@
 "use client";
 // components/Layout.js
-import Header from './Header';
-import Footer from './Footer';
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const Layout = ({ children }) => (
   <>
-  <Header />
-  <div className="max-w-7xl mx-auto p-5">
-    {children}
-  </div>
-  <Footer />
+    <Navbar />
+    <div className="max-w-7xl mx-auto p-5">{children}</div>
+    <Footer />
   </>
 );
 
