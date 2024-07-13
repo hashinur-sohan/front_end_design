@@ -8,7 +8,6 @@ import Navbar from "@/components/Navbar";
 import Head from "next/head";
 import NavBar from "@/components/Navbar";
 import { useState } from "react";
-// import React from 'react';
 
 const img = {
   img: [],
@@ -18,6 +17,7 @@ const Home = () => {
   return (
     <Layout>
       <section>
+        {/* Top Part */}
         <div
           className="mt-[80px] h-[718px] bg-[#2042B6] rounded-[5px] flex bg-center bg-no-repeat"
           style={{
@@ -68,11 +68,7 @@ const Home = () => {
 
         <div className="min-h-screen bg-[#ffffff] mt-[60px] ">
           <div className="container mx-auto py-8">
-            <div className="flex items-center justify-between">
-              {/* <button className="bg-blue-500 text-white px-4 py-2 rounded">
-                Download the 2023 Report
-              </button> */}
-            </div>
+            <div className="flex items-center justify-between"></div>
 
             <div className="mt-8 grid grid-cols-5 gap-4">
               <div className="col-span-1 w-[180px]">
@@ -96,21 +92,19 @@ const Home = () => {
               </div>
 
               <div className="col-span-4 bg-white p-6 rounded-lg shadow">
-              <div className="flex flex-row">
-              <Image
-                  src="/Union.png"
-                  width={46}
-                  height={41}
-                  alt="search"
-                  className="w-[46px] h-[41px]  "
-                />   
+                <div className="flex flex-row">
+                  <Image
+                    src="/Union.png"
+                    width={46}
+                    height={41}
+                    alt="search"
+                    className="w-[46px] h-[41px]  "
+                  />
 
-
-              
-                <h1 className="font-nantes font-[400] text-[36px] leading-[50.72px] ">
-                  The WPPOOL Index
-                </h1>
-              </div>
+                  <h1 className="font-nantes font-[400] text-[36px] leading-[50.72px] ">
+                    The WPPOOL Index
+                  </h1>
+                </div>
                 <div className="flex justify-between items-center mb-4">
                   <div className="text-xl flex flex-row">
                     <div className="flex w-[230px] h-[50px] bg-[#F3F3F3] ml-[10px] items-center justify-between">
@@ -150,23 +144,13 @@ const Home = () => {
                     </button>
                   </div>
                   <div className="flex justify-end items-center w-[300px] h-[30px] bg-[#EFF3F6] rounded-[124px]  ">
-                   
-                      <button className=" text-[#748DA1]  mr-2">
-                        1Y
-                      </button>
-                      <button className=" text-[#748DA1] px-4 ">
-                       YTD
-                      </button>
-                      <button className="w-[45px]  bg-[#2042B6] text-[#748DA1] px-4   ml-2  flex justify-center rounded-[124px]" >
+                    <button className=" text-[#748DA1]  mr-2">1Y</button>
+                    <button className=" text-[#748DA1] px-4 ">YTD</button>
+                    <button className="w-[45px]  bg-[#2042B6] text-[#748DA1] px-4   ml-2  flex justify-center rounded-[124px]">
                       6M
-                      </button>
-                      <button className=" text-[#748DA1] px-4   ml-2">
-                        1W
-                      </button>
-                      <button className=" text-[#748DA1] px-4   ml-2">
-                        1W
-                      </button>
-                    
+                    </button>
+                    <button className=" text-[#748DA1] px-4   ml-2">1W</button>
+                    <button className=" text-[#748DA1] px-4   ml-2">1W</button>
                   </div>
                 </div>
 

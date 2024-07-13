@@ -27,15 +27,13 @@ body {
 }
 
 @font-face {
-  font-family: 'Nantes';
-  src: url('/fonts/Nantes-Regular.ttf') format('truetype');
-  
+  font-family: "Nantes";
+  src: url("/fonts/Nantes-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'Messina Sans';
-  src: url('/fonts/MessinaSans-Regular.woff2') format('woff2'),
-       url('/fonts/MessinaSans-Regular.woff') format('woff');
- 
+  font-family: "Messina Sans";
+  src: url("/fonts/MessinaSans-Regular.woff2") format("woff2"),
+    url("/fonts/MessinaSans-Regular.woff") format("woff");
 }
 
 @layer utilities {
